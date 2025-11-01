@@ -6,7 +6,7 @@
   ==================================================================
 -->
 
-## 11/1/2025 - Initial research!  
+## 11/1/2025 3 PM - Initial research!  
 
 Ive got an overall idea on how a pet bottle recycler works, but never really looked into the details much. I think before starting the modelling, etc. itd be better to get some info for potential future struggles and so on.
 All i know so far about the process is: bottle gets sliced into strips, pulled thru an extruder and then wound onto a spool. 
@@ -15,4 +15,15 @@ After watching a bunch of vids on ppl assembling pet recyclers (didnt really get
 Probably the inspo ill be using throughout the project: 
 ![Screenshot 2025-11-01 152323](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzQzMCwicHVyIjoiYmxvYl9pZCJ9fQ==--a2a4a655bbbcb61c54d131ca91a9a7a7ebd500d7/Screenshot%202025-11-01%20152323.png)
   
+
+## 11/1/2025 9 PM - Hotend!  
+
+![20251101_151316](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzUxOCwicHVyIjoiYmxvYl9pZCJ9fQ==--6638df3ab6f2708d2bdb863b53f5cad178c7ec5c/20251101_151316.jpg)
+![20251101_174106](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzUyMCwicHVyIjoiYmxvYl9pZCJ9fQ==--aa33c2461010b0ab3810e574d5d45ff6b6b5b37f/20251101_174106.jpg)
+
+Managed to fully take apart the hotend, surprisingly without breaking anything (and did some browsing on aliexpress for the parts i dont yet have) ! Its got a pcb with some ressistors, but those seem to be for the levelling sensor, so im unsure whether ill use it or just detach all the things from it. 
+After some more digging, i found out that the hotend runs at 24V, so ill need a 24V psu, but im willing to pay for all that stuff. The benefit of using the pcb though would be having every connection neatly mounted already, so on second thoughr ill try and stick with that, not like its got any other use. 
+Also, while taking the thing apart, i noticed that the steppers casing is grounded for some reason (weird to me, but ill probs keep that just to be safe :p ) also would probably need to make some drilling changes for the hotend, either drill a slightly bigger intake hole with a stepless bit, or if i dont feel like drilling i might try making that transition with a 3d printed part (my own idea wow), and ill defo need to make a 1.7mm hole in the nozzle ive got already. 
+
+Speaking again of the pcb, its got a weird mount for all the cables, but a simple jumper cable seems to fit it, but ill have to design some frame to hold them all so i can clamp them with the things at the mount. Would be cool to use though.  
 
