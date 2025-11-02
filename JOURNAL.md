@@ -27,13 +27,27 @@ Also, while taking the thing apart, i noticed that the steppers casing is ground
 
 Speaking again of the pcb, its got a weird mount for all the cables, but a simple jumper cable seems to fit it, but ill have to design some frame to hold them all so i can clamp them with the things at the mount. Would be cool to use though.  
 
-## 11/2/2025 - more research yippie  
+## 11/2/2025 12 AM - more research yippie  
 
 I know i need a 24V PSU, but i have no idea so far how strong it should be. since i want this to be as compact as possible, im hoping for 3A at best, 5A max. Above that the psu gets a bit big (3A is 110\*78\*36, 5A is 160\*98\*42mm, 6A is 199\*98\*42mm). After a quite some research i found that the hotend altogether is supposed to be about 24/60W, which is about 2.5A already. Also checked on the heating element itself (which gave me 60w) to confirm the power and the fact its the hotend only, not the whole toolhead with stepper and so on. I couldnt find anything googling the numbers on the stepper to get its approximate power, so i had to turn to deepseek my beloved. It suggested a max current of .66A per phase, so 1.32A max in total, so ill stick to that for now (writing on the nema17 was **_42shdb0066z-10WD_**). After detaching the small fan attached to the heatsink, i could read off 0.08A/24V from it. I could also use the bigger fan there, but itll need .2A of current, so i gotta see if ive got enough left at the end. So for now, the total current is at about **3.9A** (with the smaller fan, with the bigger one its **4.02A**). Id like some wiggle room for the controlling stuff (which i gotta power with a stepdown converter), so i think 5A should hopefully be enough. I dont need anything fancy to control the stepper, ill use a L298N driver that ive got laying around. Speaking of logic and control though, ill need something to actually control all the stuff. I could go with an orph pico ive got but that would mean id need a display, and i sadly dont have one right now (altho it would be cool to use one bc yk, this is a hc ysws). An alternative would be an ESP32/rpi zero 2 W that i gotta control via ssh or so, which would save me like 3 bucks in buttons and display. tempting. Although a display would look cooler.
 
 
 ![20251101_231206](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzU5NywicHVyIjoiYmxvYl9pZCJ9fQ==--bd570117d1117e29002ad4b25975b5eb6d807b96/20251101_231206.jpg)
 ![20251101_211118](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzU5NiwicHVyIjoiYmxvYl9pZCJ9fQ==--8bb85cc43bf7d1cd283d7937a8f0da9787b52dba/20251101_211118.jpg)![20251101_235147](/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzU5NSwicHVyIjoiYmxvYl9pZCJ9fQ==--6aac301f02ec5d398ecc8819374b7b647f6a6d30/20251101_235147.jpg)
+
+  
+
+## 11/2/2025 3 PM - CAD start  
+
+After trying around a bit in freecad and taking 8 fucking minutes to make a single rectangle, i decided that i dont like freecad anymore and am switching to onshape. I did some irl mockups of how the hotend and so on could be placed, and the two options i had was either with the fan facing downwards, but pcb being below the hotend, or fan upwards and pcb being higher than the hotend, since i cant really move it much due to the cables. I tried reattaching the fan on the other side of the heatsink so it could be on top with the pcb on the bottom, but had to kinda force the screw into it from the other side to make the thread useable, no idea why they made it like that. 
+Anyways, after doing that, the layout of the components seems perfectly useable, i need the hotend to be higher than the pcb because i gotta get it as far away from the plasic parts as possible, while preferrably having the pcb inside the casing. I made an approximate model of the whole hotend part in onshape, with the main details ill need for mounting, etc. Took a bit longer than estimated, since i had to get used to onshape, but overall onshape seems pretty nice. 
+
+
+![20251102_122455](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Nzc3MywicHVyIjoiYmxvYl9pZCJ9fQ==--6099c893cb9e59a18792f4c3630c11f0820998c8/20251102_122455.jpg)
+![20251102_122536](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Nzc3MSwicHVyIjoiYmxvYl9pZCJ9fQ==--eb9f315bfa4ff5440f800b37c4ec055637b5f77e/20251102_122536.jpg)![20251102_122542](/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Nzc3MCwicHVyIjoiYmxvYl9pZCJ9fQ==--19d04d3b38b50726758be09433a947acce5597a0/20251102_122542.jpg)
+![20251102_125852](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Nzc3MiwicHVyIjoiYmxvYl9pZCJ9fQ==--7a76c425210c7014d1a6a43686ccb02d3bef453f/20251102_125852.jpg)
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Nzc4MCwicHVyIjoiYmxvYl9pZCJ9fQ==--f0d822ae9dc024f1414710a3c9da0dfe3900ba84/image.png)
 
   
 
