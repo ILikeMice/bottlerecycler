@@ -51,3 +51,11 @@ Anyways, after doing that, the layout of the components seems perfectly useable,
 
   
 
+## 11/2/2025 9 PM - More CAD!  
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Nzg4OCwicHVyIjoiYmxvYl9pZCJ9fQ==--731f5913e94ee7d04401f6152c0f8386608c5581/image.png)
+
+Thought of how id design the casing.[ In the video i mentioned in the first devlog](https://www.youtube.com/watch?v=1yIe1Pp_Nrg), the guy was using extrusions and kinda just mounting everything on that. As cool as i thought having extrusions would be, i wanna make this as 3d printable and cheap as possible. My current idea is to have little platforms or pins to hold the psu and so on, that ill screw into the sides of the rectangular ish casing (without a bottom, to reduce material), still thinking on that though. 
+
+Either way, main thing this session was cadding the pcb so i can make a mount for it or so. That took me waaaayyy too long since there wasnt ANY info on it online, so i had to measure anything manually (and of course i fucked up a couple times, and had constraint errors everywhere T-T, also i realized ive never really modelled after a real life complex-ish object without a schematic). After fixing everything though, it looks pretty nice and im happy with it. I wanna also make mounts ish for every pcb ill have, since this thing might be moved around a bunch and i wouldnt want the stuff to slip.  
+
