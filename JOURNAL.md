@@ -27,3 +27,13 @@ Also, while taking the thing apart, i noticed that the steppers casing is ground
 
 Speaking again of the pcb, its got a weird mount for all the cables, but a simple jumper cable seems to fit it, but ill have to design some frame to hold them all so i can clamp them with the things at the mount. Would be cool to use though.  
 
+## 11/2/2025 - more research yippie  
+
+I know i need a 24V PSU, but i have no idea so far how strong it should be. since i want this to be as compact as possible, im hoping for 3A at best, 5A max. Above that the psu gets a bit big (3A is 110*78*36, 5A is 160*98*42mm, 6A is 199*98*42mm). After a quite some research i found that the hotend altogether is supposed to be about 24/60W, which is about 2.5A already. Also checked on the heating element itself (which gave me 60w) to confirm the power and the fact its the hotend only, not the whole toolhead with stepper and so on. I couldnt find anything googling the numbers on the stepper to get its approximate power, so i had to turn to deepseek my beloved. It suggested a max current of .66A per phase, so 1.32A max in total, so ill stick to that for now (writing on the nema17 was **_42shdb0066z-10WD_**). After detaching the small fan attached to the heatsink, i could read off 0.08A/24V from it. I could also use the bigger fan there, but itll need .2A of current, so i gotta see if ive got enough left at the end. So for now, the total current is at about 3.9A (with the smaller fan). Id like some wiggle room for the controlling stuff (which i gotta power with a stepdown converter), so i think 5A should hopefully be enough. I dont need anything fancy to control the stepper, ill use a L298N driver that ive got laying around. Speaking of logic and control though, ill need something to actually control all the stuff. I could go with an orph pico ive got but that would mean id need a display, and i sadly dont have one right now (altho it would be cool to use one bc yk, this is a hc ysws). An alternative would be an ESP32/rpi zero 2 W that i gotta control via ssh or so, which would save me like 3 bucks in buttons and display. tempting. Although a display would look cooler.
+
+
+![20251101_231206](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzU5NywicHVyIjoiYmxvYl9pZCJ9fQ==--bd570117d1117e29002ad4b25975b5eb6d807b96/20251101_231206.jpg)
+![20251101_211118](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzU5NiwicHVyIjoiYmxvYl9pZCJ9fQ==--8bb85cc43bf7d1cd283d7937a8f0da9787b52dba/20251101_211118.jpg)![20251101_235147](/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NzU5NSwicHVyIjoiYmxvYl9pZCJ9fQ==--6aac301f02ec5d398ecc8819374b7b647f6a6d30/20251101_235147.jpg)
+
+  
+
