@@ -59,3 +59,18 @@ Thought of how id design the casing.[ In the video i mentioned in the first devl
 
 Either way, main thing this session was cadding the pcb so i can make a mount for it or so. That took me waaaayyy too long since there wasnt ANY info on it online, so i had to measure anything manually (and of course i fucked up a couple times, and had constraint errors everywhere T-T, also i realized ive never really modelled after a real life complex-ish object without a schematic). After fixing everything though, it looks pretty nice and im happy with it. I wanna also make mounts ish for every pcb ill have, since this thing might be moved around a bunch and i wouldnt want the stuff to slip.  
 
+## 11/3/2025 - Casing stuff!  
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODA5OCwicHVyIjoiYmxvYl9pZCJ9fQ==--5ebeb7f6db169c07a359b790ecf3da0342fc3c06/image.png)
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODA5OSwicHVyIjoiYmxvYl9pZCJ9fQ==--4863d2ec52900e7d5faa7a7596b7e303c43b801f/image.png)
+
+^^As you can see above, i did a bunch of improvements on the casing! Taking inspo from the design of that other guy i mentioned in the first entry, i wanted some sort of hex pattern on the casing, which looks cool but is also mainly to save some filament and printing time. Ive never really printed anything vertically with a hex pattern, and was unsure if it would hold at all. Some research told me i gotta have the flat side of the hexagon pointing up, and just bridge over it so it doesnt break. I have no idea how my printer performs in bridging, but from what ive seen online the quality is pretty meh, but using supports might just increase print  time and filament use more than this pattern is reducing. The upper version is me trying to round the corners to minimize bridging, but that way just leads to circles at the end, and im unsure of what the layer height req will be with rounded corners (does also look pretty cool tho!). Gotta run some tests ig.
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODExMywicHVyIjoiYmxvYl9pZCJ9fQ==--3281d8fc00646ffced1a8e3230cb1a25cc9ab221/image.png)
+
+Also, i got started on the electronics layout stuff and so on! Added some cool looking holders! The orange ones will be secured in place with the 2 heatset inserts and some screws ive got in the hotend/some other way, but ill be sure to definetly use those inserts, thought its really neat to use as much from the toolhead as possible. The blue ones are printed together with the case (i thought of making them flipped, so i wouldnt need support but that seemed like a pretty bad idea holding power wise) and are gonna need supports, so i placed them on the edges to be able to not have supports placed on the model itself.
+
+PS: this shit took me way too long, im not adding all the variations i tried here and holy some of the tools (esp pattern) are so much weirder than in fusion, this shit is making me actually learn how to use constrains in sketches lmao
+  
+
