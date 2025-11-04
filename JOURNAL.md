@@ -74,3 +74,20 @@ Also, i got started on the electronics layout stuff and so on! Added some cool l
 PS: this shit took me way too long, im not adding all the variations i tried here and holy some of the tools (esp pattern) are so much weirder than in fusion, this shit is making me actually learn how to use constrains in sketches lmao
   
 
+## 11/4/2025 - Electronics layout stuff (yay..)  
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODM1NywicHVyIjoiYmxvYl9pZCJ9fQ==--ac5a3424307e4ceb28e3a53fa573dd07601c3bef/image.png)
+
+I did some of the work here yesterday, but was too tired to document it :p
+
+First of all, made holes for screws/heatset inserts to mount the pcb and hotend (also made a hole for the pcb wire holder thing so i can connect stuff from the electronics inside the case into it)! Had to correct some little errors in the pcb model since im that good at cad. Also, minor change, changed the shape of the electonics holder mount, since printing circles would be pretty annoying and probs unstable.
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODM1OCwicHVyIjoiYmxvYl9pZCJ9fQ==--bddad7129f100bdb189a0a1b61df484d5fc9e48e/image.png)
+
+Really love how i can modify the timeline to change some stuff, didnt really do that much in fusion, does take some extra time sometimes tho, but feels waaay cleaner
+![Screenshot 2025-11-04 170519](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODM2MSwicHVyIjoiYmxvYl9pZCJ9fQ==--caefb346b4ba9dc4b2dd2a8ff7b844bee7d90df8/Screenshot%202025-11-04%20170519.png)![Screenshot 2025-11-04 173122](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODM2MiwicHVyIjoiYmxvYl9pZCJ9fQ==--48bb4076eb103a31ffbc8371ebcd3be04ac43b8a/Screenshot%202025-11-04%20173122.png)
+![Screenshot 2025-11-04 183749](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODM2NCwicHVyIjoiYmxvYl9pZCJ9fQ==--ef4eeeeb308469ec8aec7422a0150d2bb37cd601/Screenshot%202025-11-04%20183749.png)
+![Screenshot 2025-11-04 183627](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6ODM2MCwicHVyIjoiYmxvYl9pZCJ9fQ==--be0afc52e8c38d5e3c799168b93fafbc05302faf/Screenshot%202025-11-04%20183627.png)
+
+So, electronics layout! Dont wanna flood the whole page with the shit i tried before giving up and looking for an algorithm to find the optimal layout for me (almost pulled up python smh), the first img is one of the first things i tried making and was confident enough in to screenshot! I was then hit by the psu that i hid which was taking up too much of the space. My fault for hoping i could fit all the stuff on 1 platform ig. I was still hanging onto the idea of fitting it all on the platform for a while, all i needed was like 3mm of extra space. I then proceeded to resize the whole case (which was really painful since i also had to change the pattern thing) only to realize that its 223mm long now. Which just so happens to be about 3mm bigger than my printbed. Yeouch. The whole thing is like 110mm wide so i dont think placing it diagonally would fit it onto the printbed either. Started thinking of where i could possibly place 1 more component, first idea was to make the platform have 2 floors, but that seemed rly hard to print and overall i am not dealing with the wires on 2 whole floors. Other option would be to mount it somewhere on the case (if so, then probably on the "ceiling" of the case, since anywhere else would be too far from the components (e.g. i need the 24 to 5v converter to be not far from the esp in order to power it, and other components like the mosfet or L298N near the PSU cuz i need 24v there). After more pondering and messing around for a fuckton of time, i went with the L298N on the ceiling, and the rest on the Platform (dont have mounting holes for the components figured out yet, will after most of them arrive)  
+
