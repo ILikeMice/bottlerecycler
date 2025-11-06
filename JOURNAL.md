@@ -91,3 +91,39 @@ Really love how i can modify the timeline to change some stuff, didnt really do 
 
 So, electronics layout! Dont wanna flood the whole page with the shit i tried before giving up and looking for an algorithm to find the optimal layout for me (almost pulled up python smh), the first img is one of the first things i tried making and was confident enough in to screenshot! I was then hit by the psu that i hid which was taking up too much of the space. My fault for hoping i could fit all the stuff on 1 platform ig. I was still hanging onto the idea of fitting it all on the platform for a while, all i needed was like 3mm of extra space. I then proceeded to resize the whole case (which was really painful since i also had to change the pattern thing) only to realize that its 223mm long now. Which just so happens to be about 3mm bigger than my printbed. Yeouch. The whole thing is like 110mm wide so i dont think placing it diagonally would fit it onto the printbed either. Started thinking of where i could possibly place 1 more component, first idea was to make the platform have 2 floors, but that seemed rly hard to print and overall i am not dealing with the wires on 2 whole floors. Other option would be to mount it somewhere on the case (if so, then probably on the "ceiling" of the case, since anywhere else would be too far from the components (e.g. i need the 24 to 5v converter to be not far from the esp in order to power it, and other components like the mosfet or L298N near the PSU cuz i need 24v there). After more pondering and messing around for a fuckton of time, i went with the L298N on the ceiling, and the rest on the Platform (dont have mounting holes for the components figured out yet, will after most of them arrive)  
 
+## 11/6/2025 - Filament spool mount!  
+
+Yippie 2 in 1 journal entry again! 
+Final design today below:
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTAxNSwicHVyIjoiYmxvYl9pZCJ9fQ==--e2539befcb8ef90f939dccb3f2cf3b38b72ab463/image.png)
+
+Yesterday, i made the side things that are supposed to hold the spool up, see how theres like half the thing popping out at the bottom? I probably couldve just not done that but i wanted to make sure this shit does NOT wiggle, and even tho inserting a bolt from that side makes the main case look weird in places, i think its probs def better with that side mount (i still gotta add a screw to hold it down like one normally would). 
+
+Initially, the plan for the spool was for it to be halfway "inside" the case, kinda submerged for compactness. Only reason i cant do that though is thanks to the electronics layout problem (not reexplaining that, go read previous entries) taking up way too much space, and removing any more of the case would just screw up the stability of it.
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTAxNiwicHVyIjoiYmxvYl9pZCJ9fQ==--a4835545d9f855be9ec5c5137eb9db1cab1c87a7/image.png)
+
+^^weird case thing because of the sideways screw, hopefully it wont break (surely not foreshadowing, _**right**_?)^^
+
+Then today, i also did some more research on how people overall made this part. Once again taking inspo from the main inspiration design, i saw hes got a 3d printed spool and a huuuge gear around it connected to a smaller stepper gear. As much as i want to make this fully 3d printable, i did have a spool with just a bit of filament left int it. After removing that, i saved myself like 6-7 hours of print time! The spool has round holes in it, 6 in total, paired together in 3 pairs. My initial idea was to make things that clamp into those, holding a gear that i can later rotate somehow. I ended up thinking about that in the very last step, will return to this in like 1 paragraph.
+
+I was now also stuck with a decision: either i connect the spool with a timing belt (my initial idea) or i make a huge gear thats exactly the same module as the one mounted on the stepper (cant take off the gear sadly, its part of the stepper rod :p). The timing belt did fit onto the stepper gear decently though, and that extra closed loop belt i bought was reeeealllly looking at me. biggest gear i could do with that belt was about 80T though, and the stepper ended up being way too far from the pcb :/ I didnt really want to do a big gear, since first of all, id have to print a decently big chunk of it with the smallest nozzle ive got (0.2mm), and prototyping didnt sound much fun with that either. After trying around some more though, i realized i didnt really have a choice, so i just went with that, and make a whopping 400T gear (it had to be big enough to read anywhere near the PCB) that made onshape lag yayyy! Also, decided to mount the stepper directly to one of the spool holders, since i dont think i really need a stepper frame here. I did have to manually measure everything on the stepper tho since i dont trust online sources on some random stepper that i dont have a 20823 page manual for. In total, i am left with a 40:1 reduction ratio on that thing, surely thats fine.
+
+Back to attaching the gear to the spool! I tried using those 6 holes, but they were so conveniently placed for my inconvenience, that the teeth were right in the middle of them. Instead of trying to get it to work i just switched to the 3 rectangular ish holes on the spool. My idea of having the mounts outside the gear didnt really work with that one, i think its even better this way though, lucky the 1st version didnt work! 
+
+The blue thing is the thing that attaches to the filament spool. Ill print it with a bigger nozzle to save time and just glue it onto the gear thing.
+
+Biggest problem so far though was the layout of the stuff on that cylinder thats holding everything. i wanted to make everything not slip, and make sure the rod itself is somewhat detachable too, since ill need to remove the spool for, you know, printing sometime. Long story short, in the end i ended up with a design looking like a spyglass, where the things have a decreasing diameter, so theyre practically locked in place/sqished into the one holder!
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTAxOSwicHVyIjoiYmxvYl9pZCJ9fQ==--704e621232c6d420825b16e99a294921f87ebb21/image.png)
+
+Also, the spool isnt perfectly centered now, so i had to move the hotend a bit.
+
+![image](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTAyMCwicHVyIjoiYmxvYl9pZCJ9fQ==--0a961254ce33854618db4e4c7ffebe2664ac555b/image.png)
+
+
+
+
+  
+
