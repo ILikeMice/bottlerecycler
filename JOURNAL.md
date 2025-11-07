@@ -127,3 +127,20 @@ Also, the spool isnt perfectly centered now, so i had to move the hotend a bit.
 
   
 
+## 11/7/2025 - Cutting mechanism test!  
+
+I think the winding system is pretty much done, just gotta add in some screws and maybe polish it a bit. Anyways, i wanted to test whether bearings could even cut the bottle, so i took some sandpaper and started sanding one!
+
+I realized quite quickly that theres a reason everyone in the videos had either a belt sander or some disk thing, since sanding this thing manually was real hard, and took me like one hour in total.
+
+![Screenshot_20251107_144942_YouTube](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTE0NCwicHVyIjoiYmxvYl9pZCJ9fQ==--af930f9c7933041608d7f3284ccda389b1ce745a/Screenshot_20251107_144942_YouTube.jpg)
+![20251107_145045](https://blueprint.hackclub.com/user-attachments/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6OTE0NSwicHVyIjoiYmxvYl9pZCJ9fQ==--67ad01583501dae3c06a2c24f05bdd0b8f3ede38/20251107_145045.jpg)
+
+^^ bearing in the video vs my bearing after goinf through a whole sheet of sandpaper and exhausting my hand
+
+Ended up almost losing the bearing towards the end under the boards of the balcony (went there to not disturb anyone, this process is pretty damn loud), luckily managed to retrieve it though
+
+In conclusion: im gonna assume it works, since compared to the unsharpened side of the bearing, the sharpened one actually leaves some scratches on the bottle, so surely itll work if i sand it just a bit more, right?
+
+Also, im gonna try making some holder i can attach to my drill to sand this thing, no way im doing all that manually again.  
+
