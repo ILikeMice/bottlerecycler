@@ -4,6 +4,8 @@ Name pretty much says it all, this is a project to try and recycle the mountain 
 
 ![alt text](images/image.png)
 
+The way it works is: plastic bottles get cut up into strips (~8mm) and pulled through the hotend, at a temp that is about enough to soften the plastic **without melting it**, so the strip gets rolled up into itself and forms some sort of a tube. I can then use this makeshift filament to print stuff!
+
 I tried to use as many components from an Anycubic Kobra 2 Hotend in this project, since i had one laying around (and which i bought for only 10 bucks, damn good deal), and ended up using pretty much everything i could: The stepper motor from the extruder, the hotend itself(duh), practically all the screws, and even the PCB that controlled (or rather had all the connectors, the only thing except traces on that thing is a couple of diodes lol) the whole thing!
 
 ![alt text](images/image-2.png)
