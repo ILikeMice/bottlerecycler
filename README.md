@@ -1,5 +1,7 @@
 # PETG to Filament Bottle recycler!
 
+![alt text](images/20260217_122538.jpg)
+
 Name pretty much says it all, this is a project to try and recycle the mountain of iced tea bottles ive got into filament! Ive seen people do this years ago, but didnt really have any CAD or electronics skills back then, and really wanted to make something like that too, since 30€ per kg of filament seems overpriced and i would really prefer to spend my money on aliexpress instead.
 
 ![alt text](images/image.png)
@@ -10,12 +12,12 @@ I tried to use as many components from an Anycubic Kobra 2 Hotend in this projec
 
 ![alt text](images/image-2.png)
 
-The contraption itself is controlled by an ESP32, for the stepper i used a L298N i had laying around, and for the heating element i had to get a mosfet breakout.
+The contraption itself is controlled by an ESP32, which drives a BJT for the DC motor of the spool and a Heater Element via a mosfet, with the circuit shown below!!
 
+### Main Circuit
+![alt text](images/image-1.jpg)
 
-### Wiring diagram
-
-![alt text](images/image-1.png)
+This is the diagram of the main circuit im using, which i had to put together and solder on my own! You will also have to remove the ressistors on the IRF520 module. The circuit is used to drive the DC motor with 5v from the buck converter, and drive the MOSFET with the same 5v, since the ESP can only output up to 3.3v, and the IRF520 needs 4v  at gate.
 
 
 ## BOM
