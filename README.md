@@ -1,5 +1,7 @@
 # PETG to Filament Bottle recycler!
 
+https://cad.onshape.com/documents/4bfb7a9ed6c6a0026068647e/w/94f532863257475cc59f14dc/e/ca07e4d33eb1537d07c3052b
+
 ![alt text](images/20260217_122538.jpg)
 
 Name pretty much says it all, this is a project to try and recycle the mountain of iced tea bottles ive got into filament! Ive seen people do this years ago, but didnt really have any CAD or electronics skills back then, and really wanted to make something like that too, since 30€ per kg of filament seems overpriced and i would really prefer to spend my money on aliexpress instead.
